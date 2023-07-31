@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"/>
+    
+  <!-- jQuery BEFORE Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/CSS/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/bootstrap-4.6.2-dist/css/bootstrap.css" >
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  
+  <title>First, Food</title>
+
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="./images/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+    First, Food
+  </a>
+</nav>
+  <div class="container pb-5 rounded">
+    
+    
+      
+      <div class="row d-flex flex-row ">
+        
+        <div id="leftColumn" class="col-md-12 col-lg-5 order-2 order-lg-1 align-self-start">
+          <aside class="text-center text-lg-left ml-2" id="recipe-container">
+            
+            <img id="photo" src="./images/be.jpg" class="rounded ml-md-3" alt="recipe image" width="300px" height="300px">
+            
+            <article class="text-lg-left pl-2 pr-3 mt-2 ml-4">       
+              <h5 class="ml-lg-0">Ingredients for:</h5>
+              <h2 class="mb-2" id="recipeName">Pilau</h2>         
+              <ul class="ingredients mt-3" id="ulIngredients">
+                <li class="ingredients">500 g beef</li>
+                <li class="ingredients">800 g of white rice</li>
+                <li class="ingredients">3 large onions to be chopped</li>
+                <li class="ingredients">1/3 cup oil</li>
+                <li class="ingredients">4 cloves of garlic to be grated</li>
+                <li class="ingredients">A small piece of ginger to be grated</li>
+                <li class="ingredients">Chopped coriander</li>
+                <li class="ingredients">Tomato paste</li>
+                <li class="ingredients">Pilau masala</li>
+                <li class="ingredients">1 tablespoon of cumin powder</li>
+                <li class="ingredients">1 tablespoon of pepper</li>
+                <li class="ingredients">4 cinnamon sticks</li>
+                <li class="ingredients">4 cloves 2 cardamom</li>
+              </ul>
+            </article>
+          </aside>
+        </div>
+      
+      
+        <main class="col-md-12 col-lg-7 order-1 order-lg-2 pl-3">
+          <div id="maincontainer"> 
+            <form class="mr-lg-4">
+              <div class="formhead pl-lg-4 mb-3 py-1 text-center text-lg-left">
+                <legend>Recipe Selection:</legend>
+              </div>
+              <div class="form-group form-control-lg">
+                <!-- <label for="searchTerm">Search Term:</label> -->
+                <input type="text" class="form-control" id="searchTerm" placeholder="Pilau">
+              </div>
+              
+              <h5 class="form-group">optional choices:</h5>
+              <div class="form-group">            
+                <select class="form-control custom-select mt-1" id="diet">
+                  <option selected data-name="">Diet:</option>
+                  <option value="1" data-name="&diet=balanced">Balanced</option>
+                  <option value="2" data-name="&diet=high-fiber">High-fiber</option>
+                  <option value="3" data-name="&diet=high-protein">High-protein</option>
+                  <option value="4" data-name="&diet=low-carb">Low-carb</option>
+                  <option value="5" data-name="&diet=low-fat">Low-fat</option>
+                  <option value="6" data-name="&diet=low-sodium">Low-sodium</option>
+                </select>
+              </div>
+          
+              <div class="selectWrapper form-group">  
+                <select class="form-control custom-select mt-1" id="alergies">
+                  <option selected data-name="">Allergies:</option>
+                  <option value="1" data-name="&health=alcohol-free">Alcohol-free</option>
+                  <option value="2" data-name="&health=celery-free">Celery-free</option>
+                  <option value="3" data-name="&health=dairy-free">Dairy-free</option>
+                  <option value="4" data-name="&health=egg-free">Egg-free</option>
+                  <option value="5" data-name="&health=fish-free">Fish-free</option>
+                  <option value="6" data-name="&health=gluten-free">Gluten-free</option>
+                  <option value="7" data-name="&health=peanut-free">Peanut-free</option>
+                  <option value="8" data-name="&health=pork-free">Pork-free</option>
+                  <option value="9" data-name="&health=red-meat-free">Red-meat-free</option>
+                  <option value="10" data-name="&health=sesame-free">Sesame-free</option>
+                  <option value="11" data-name="&health=soy-free">Soy-free</option>
+                  <option value="12" data-name="&health=no-oil-added">No-oil-added</option>
+                  <option value="13" data-name="&health=pescatarian">Pescatarian</option>
+                  <option value="15" data-name="&health=vegan">Vegan</option>
+                  <option value="16" data-name="&health=vegetarian">Vegetarian</option>
+                </select>
+              </div>
+          
+              <div class="selectWrapper form-group">  
+                <select class="form-control custom-select mt-1" id="meal-type">
+                  <option selected data-name="">Meal type:</option>
+                  <option value="1" data-name="&mealType=breakfast">Breakfast</option>
+                  <option value="2" data-name="&mealType=lunch">Lunch</option>
+                  <option value="3" data-name="&mealType=dinner">Dinner</option>
+                </select>
+              </div>
+          
+              <div class="row form-group mt-4">
+                  <div class="col-12"><button id="searchButton" type="button" class="btn btn-lg btn-block mb-4 mt-4 mt-lg-1">Search</button></div>
+                </div>
+              </form>
+
+        <!-- end of maincontainer -->
+        </div>
+
+       <!-- end of main --> 
+      </main>
+
+      
+          
+        <!-- ============================= NEW DIV ============================= -->    
+      <section id="foodinfo" class="col-md-12 col-lg-7 order-3 pl-3 ml-lg-auto d-none">        
+        <div id="nutritionsDirections" class="mr-lg-4 form-group">
+          <!-- Trigger the modal with a button -->
+          <button id="nutritions" type="button" class="btn btn-lg btn-block mb-4 mt-5" data-toggle="modal" data-target="#myModal">Nutritional information</button>
+          <a href="#" id="directions" target="_blank" class="btn btn-lg btn-block d-flex justify-content-center align-items-center d-none">Cooking Instructions</a>
+        </div>
+      </section>
+
+      <!-- end of row --> 
+    </div>
+
+         
+
+      <!-- Modal -->
+      <div class="container">
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close m-0 p-0 pt-2" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title  pr-5 mr-5">Recipe nutrition information</h4>
+              </div>
+              <div id="modal-body" class="modal-body d-flex flex-column align-items-center">
+                
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-default pl-5 pr-5 " data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      <!-- End Modal -->
+
+ 
+  
+  <div class="row" id="recipeVideos">
+    <div class="col-12 articleHead text-center mb-2 py-2">
+      <h3>Alternative Recipe Videos</h3>
+    </div>
+    <div class="col-sm-12" id="videoResult">
+      <!-- VIDEOS RENDERED HERE -->
+    </div>
+  
+  </div>
+</div>
+
+<!-- //BACK-TO-TOP -->
+<div class="row w-75 mx-auto mt-3 pb-2 d-block d-md-none">
+  <a class="col-12 btn btn-dark btn-lg btn-block" href="#header" role="button" id="backtoTop">Back to the Top</a>
+</div>
+
+
+</div> 
+
+<!-- e/o container -->
+</div>
+
+
+<script src="./assets/JS/jquery-3.6.0.min.js"></script>
+<script src="./assets/JS/jquery-ui.js"></script>
+<script src="./assets/bootstrap-4.6.2-dist/js/bootstrap.js" ></script>
+<script src="./assets/bootstrap-4.6.2-dist/js/bootstrap.min.js" ></script>
+<script src="./assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.js" ></script>
+<script src="./assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js" ></script>  
+<script src="./assets/JS/script.js"></script>
+
+</body>
+
+</html>

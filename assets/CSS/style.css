@@ -1,0 +1,292 @@
+/* request to Google Fonts API */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Phudu:wght@300&display=swap");
+
+:root {
+	--greekBlue: rgb(0, 20, 137);
+	--lightGrey: rgba(128, 128, 128, 0.5);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: var(--greekBlue);
+	background-image: url(../../images/johnny-africa-_ZX0S27D3fw-unsplash.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 1000px;
+	margin-top: 20px;
+	/* border: 1px solid rgba(128, 128, 128, 0.1); */
+	background-color: #ffffffd7;
+}
+
+.header {
+	background-color: var(--greekBlue);
+	outline: solid 2px #fff;
+	outline-offset: -5px;
+	box-shadow: 2px 5px 8px rgba(128, 128, 128, 0.5);
+	filter: drop-shadow(2px 5px 8px rgba(128, 128, 128, 0.5));
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 70px;
+	font-family: "Lobster", "Georgia", serif;
+	/* -webkit-text-stroke: 2px var(--greekBlue); */
+}
+
+/* ==================== Ingredients - photo & text ====================  */
+#leftColumn{
+/* margin-bottom: -90%; */
+/* border: 1px solid green; */
+}
+aside {
+	margin-top: 30px;
+}
+
+article {
+	padding: 5px;
+}
+
+#photo {
+	width: 300px;
+	height: 300px;
+	border: none;
+	border-radius: 15px 0 0;
+	box-shadow: 2px 5px 8px rgba(128, 128, 128, 0.5);
+	filter: drop-shadow(2px 5px 8px rgba(128, 128, 128, 0.5));
+}
+
+#ulIngredients {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#ulIngredients li {
+	margin-bottom: 10px;
+}
+
+/* ======================== Recipe Selection FORM ========================  */
+#main {
+
+}
+form {
+	margin: 30px 0 20px;
+	border: 1px solid lightgray;
+	border-radius: 0 15px 0 0;
+	box-shadow: 2px 5px 8px rgba(128, 128, 128, 0.5);
+	filter: drop-shadow(2px 5px 8px rgba(128, 128, 128, 0.5));
+	background-color: #ffffff91;
+}
+
+.formhead {
+	background-color: rgba(50, 104, 145, 0.1);
+	width: 100%;
+	height: 50px;
+	border-radius: inherit;
+}
+
+legend {
+	color: var(--greekBlue);
+}
+
+.form-group {
+	padding: 0 35px;
+}
+
+.form-control {
+	background-color: rgba(50, 104, 145, 0.05);
+	height: 50px;
+	color: var(--greekBlue);
+	margin-top: 30px;
+	/* disable bootstrap defaults */
+	box-shadow: none !important;
+	outline: -webkit-focus-ring-color auto 0px !important;
+	border-color: none;
+}
+
+.form-control:focus {
+	border-color: var(--greekBlue);
+}
+
+input::placeholder {
+	color: rgba(50, 104, 145, 0.3) !important;
+}
+
+/* hack to remove default Bootstrap input styling */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+	transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+option {
+	color: var(--greekBlue);
+}
+option:focus {
+	color: var(--greekBlue);
+}
+
+
+.btn {
+	outline: solid 1px #fff;
+	outline-offset: -5px;
+	color: white;
+	font-family: "Lobster", "Georgia", serif;
+	background-color: var(--greekBlue) !important;
+	height: 100px;
+	font-size: 40px;
+}
+
+.btn:hover {
+	color: white !important;
+	font-family: "Lobster", "Georgia", serif;
+	box-shadow: 2px 5px 8px rgba(128, 128, 128, 0.5);
+	filter: drop-shadow(2px 5px 8px rgba(128, 128, 128, 0.5));
+}
+
+.btn:focus {
+	box-shadow: none;
+	outline: solid 1px #fff !important;
+	outline-offset: -5px !important;
+}
+
+/* ========================== Recipe Directions ==========================  */
+#foodinfo{
+
+}
+
+#nutritionsDirections {
+/* border: 1px dashed red; */
+font-size: 10px !important;
+}
+
+#directions a {
+
+}
+
+#foodinfo {
+
+}
+
+
+/* =============================== Videos ===============================  */
+
+#recipeVideos {
+	margin-top: 30px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.articleHead {
+	background-color: rgba(50, 104, 145, 0.1);
+}
+
+#videoResult {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	align-items: center;
+}
+
+#videoResult div {
+	padding: 1rem !important;
+	margin-bottom: 1rem !important;
+	width: max(50%, 300px);
+}
+
+#videoResult p {
+	color: rgb(84, 86, 98) !important;
+}
+
+#videoResult {
+	padding-bottom: 20px;
+}
+h5 {
+	margin-top: 30px;
+}
+
+iframe {
+	margin-top: 10px;
+}
+
+.btn-modal {
+	margin: 40px 0;
+}
+
+/* ================================ footer ================================ */
+#backtoTop {
+	font-size: 40px;
+	line-height: 80px;
+}
+
+footer {
+	background-color: #ffffffd7;
+	margin: 30px 0 40px;
+	text-align: center;
+}
+
+footer a {
+	color: var(--greekBlue);
+	font-weight: bold;
+}
+
+.credits {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#creditLinks {
+	font-weight: bold;
+}
+
+/* ======================== RESPONSIVE MEDIA QUERIES ======================== */
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #foodinfo {
+margin-top: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #foodinfo {
+        margin-top: 0;
+            }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	ul.ingredients {
+		/* list-style-type: none; */
+		list-style: none outside url("../../images/greenCheck-15.png");
+		padding: 0;
+		margin: 0;
+	}
+
+	.btn {
+		height: 60px;
+		font-size: 20px;
+	}
+
+    #foodinfo {
+
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
